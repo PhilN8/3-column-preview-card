@@ -57,12 +57,6 @@ body {
   justify-content: space-between;
 }
 
-@media (min-width: 33.125em) {
-  .container {
-    /* margin-inline: auto; */
-  }
-}
-
 @media (min-width: 48em) {
   .flex {
     flex-direction: row;
@@ -71,12 +65,13 @@ body {
   .card {
     flex-direction: column;
     flex-basis: 100%;
+    min-height: 25em;
+    padding-bottom: 5em;
   }
 }
 
 .cyan {
   background-color: hsl(var(--clr-cyan));
-  /* border-top: 2em; */
 }
 
 .cyan a {
