@@ -1,0 +1,143 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"); */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--clr-gray);
+}
+
+:root {
+  --clr-orange: 31, 77%, 52%;
+  --clr-cyan: 184, 100%, 22%;
+  --clr-dark-cyan: 179, 100%, 13%;
+
+  --clr-gray: hsl(0, 0%, 100%);
+  --clr-white: hsla(0, 0%, 100%, 0.75);
+}
+
+.container {
+  margin: 4em;
+  max-width: 70em;
+  /* border-radius: em; */
+  /* border: 5px solid hotpink; */
+}
+
+.lexend {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.big-shoulders {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  /* border-radius: 2em; */
+}
+
+.card {
+  padding: 2em;
+  min-height: 20em;
+  justify-content: space-between;
+}
+
+@media (min-width: 33.125em) {
+  .container {
+    /* margin-inline: auto; */
+  }
+}
+
+@media (min-width: 48em) {
+  .flex {
+    flex-direction: row;
+  }
+
+  .card {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+}
+
+.cyan {
+  background-color: hsl(var(--clr-cyan));
+  /* border-top: 2em; */
+}
+
+.cyan a {
+  color: hsl(var(--clr-cyan));
+}
+
+.dark-cyan {
+  background-color: hsl(var(--clr-dark-cyan));
+  border-bottom: 2em;
+}
+
+.dark-cyan a {
+  color: hsl(var(--clr-dark-cyan));
+}
+
+.orange {
+  background-color: hsl(var(--clr-orange));
+  border-top: 2em;
+}
+
+.orange a {
+  color: hsl(var(--clr-orange));
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--clr-white);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: var(--clr-gray);
+}
+
+.btn {
+  /* display: block; */
+  text-decoration: none;
+  background-color: var(--clr-gray);
+  color: transparent;
+  font-family: "Lexend Deca", sans-serif;
+  margin-block: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.75em;
+  border-radius: 1.5em;
+  width: max-content;
+}
+
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--clr-white);
+  border: 1px solid white;
+  border-color: var(--clr-white);
+}
+
+.flex--card {
+  justify-content: space-between;
+}
