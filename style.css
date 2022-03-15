@@ -30,10 +30,9 @@ body {
 }
 
 .container {
-  margin: 4em;
+  width: 85%;
+  margin: 4em auto;
   max-width: 70em;
-  /* border-radius: em; */
-  /* border: 5px solid hotpink; */
 }
 
 .lexend {
@@ -48,7 +47,6 @@ body {
 .flex {
   display: flex;
   flex-direction: column;
-  /* border-radius: 2em; */
 }
 
 .card {
@@ -112,7 +110,6 @@ h1 {
 }
 
 .btn {
-  /* display: block; */
   text-decoration: none;
   background-color: var(--clr-gray);
   color: transparent;
